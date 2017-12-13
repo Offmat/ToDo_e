@@ -1,3 +1,5 @@
 <h2>Current task: <strong><%= @task.title %></strong> </h2>
 <h3> <%= @task.body %> </h3>
+<%= link_to "Edit", edit_task_path(@task) %>
+<br>
 <%= link_to "Go back", tasks_path %>
